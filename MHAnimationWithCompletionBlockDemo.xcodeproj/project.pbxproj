@@ -22,6 +22,8 @@
 		0831A6F8199365F000B008DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0831A6D7199365F000B008DB /* UIKit.framework */; };
 		0831A700199365F000B008DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0831A6FE199365F000B008DB /* InfoPlist.strings */; };
 		0831A702199365F000B008DB /* MHAnimationWithCompletionBlockDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0831A701199365F000B008DB /* MHAnimationWithCompletionBlockDemoTests.m */; };
+		0831A7191993712100B008DB /* CAAnimation+CompletionBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0831A7151993712100B008DB /* CAAnimation+CompletionBlock.m */; };
+		0831A71A1993712100B008DB /* CALayer+CompletionBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0831A7171993712100B008DB /* CALayer+CompletionBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,11 @@
 		0831A6FD199365F000B008DB /* MHAnimationWithCompletionBlockDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHAnimationWithCompletionBlockDemoTests-Info.plist"; sourceTree = "<group>"; };
 		0831A6FF199365F000B008DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0831A701199365F000B008DB /* MHAnimationWithCompletionBlockDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAnimationWithCompletionBlockDemoTests.m; sourceTree = "<group>"; };
+		0831A7141993712100B008DB /* CAAnimation+CompletionBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+CompletionBlock.h"; sourceTree = "<group>"; };
+		0831A7151993712100B008DB /* CAAnimation+CompletionBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+CompletionBlock.m"; sourceTree = "<group>"; };
+		0831A7161993712100B008DB /* CALayer+CompletionBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+CompletionBlock.h"; sourceTree = "<group>"; };
+		0831A7171993712100B008DB /* CALayer+CompletionBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+CompletionBlock.m"; sourceTree = "<group>"; };
+		0831A7181993712100B008DB /* MHAnimationWithCompletionBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAnimationWithCompletionBlock.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +91,7 @@
 		0831A6C7199365F000B008DB = {
 			isa = PBXGroup;
 			children = (
+				0831A7131993712100B008DB /* MHAnimationWithCompletionBlock */,
 				0831A6D9199365F000B008DB /* MHAnimationWithCompletionBlockDemo */,
 				0831A6FB199365F000B008DB /* MHAnimationWithCompletionBlockDemoTests */,
 				0831A6D2199365F000B008DB /* Frameworks */,
@@ -153,6 +161,18 @@
 				0831A6FE199365F000B008DB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0831A7131993712100B008DB /* MHAnimationWithCompletionBlock */ = {
+			isa = PBXGroup;
+			children = (
+				0831A7141993712100B008DB /* CAAnimation+CompletionBlock.h */,
+				0831A7151993712100B008DB /* CAAnimation+CompletionBlock.m */,
+				0831A7161993712100B008DB /* CALayer+CompletionBlock.h */,
+				0831A7171993712100B008DB /* CALayer+CompletionBlock.m */,
+				0831A7181993712100B008DB /* MHAnimationWithCompletionBlock.h */,
+			);
+			path = MHAnimationWithCompletionBlock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0831A7191993712100B008DB /* CAAnimation+CompletionBlock.m in Sources */,
 				0831A6ED199365F000B008DB /* ViewController.m in Sources */,
 				0831A6E4199365F000B008DB /* AppDelegate.m in Sources */,
+				0831A71A1993712100B008DB /* CALayer+CompletionBlock.m in Sources */,
 				0831A6E0199365F000B008DB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
